@@ -1,0 +1,23 @@
+{
+  "name": "examen-parcial2-carlos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carloss2409/examen-parcial2-Carlos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carloss2409/examen-parcial2-Carlos/issues"
+  },
+  "homepage": "https://github.com/Carloss2409/examen-parcial2-Carlos#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
