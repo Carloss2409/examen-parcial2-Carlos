@@ -4,10 +4,9 @@
     "module": "commonjs",
     "outDir": "./wwwroot/js",
     "rootDir": "./scripts",
-    "strict": true,
-    "esModuleInterop": true
+    "strict": true
   },
   "include": [
-    "scripts/**/*"
+    "scripts/**/*.ts"
   ]
 }

@@ -1,26 +1,18 @@
-
-
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.PropertyNamingPolicy = null;
+        options.JsonSerializerOptions.WriteIndented = true;
+    });
+
+// Registro del servicio CarreraService
+builder.Services.AddSingleton<CarreraService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
-
-app.UseHttpsRedirection();
-app.UseStaticFiles();
-
-app.UseRouting();
-
-app.UseAuthorization();
+// Resto de configuración...
 
 app.MapControllerRoute(
     name: "default",
@@ -28,4 +20,6 @@ app.MapControllerRoute(
 
 app.Run();
 
-
+internal class CarreraService
+{
+}

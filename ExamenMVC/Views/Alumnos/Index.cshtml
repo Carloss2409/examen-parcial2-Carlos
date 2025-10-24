@@ -1,0 +1,23 @@
+@{
+    <script src="~/js/validaciones.js"></script>
+
+    ViewData["Title"] = "Alumnos";
+}
+
+<h2>Formulario de Alumnos</h2>
+
+<form id="formAlumnos">
+    <label>Nombre:</label>
+    <input type="text" id="nombre" />
+    <span class="error" id="errorNombre"></span>
+    
+    <label>Carrera:</label>
+    <select id="carrera">
+        <option value="">Selecciona una carrera</option>
+    </select>
+    <span class="error" id="errorCarrera"></span>
+
+    <button type="submit">Enviar</button>
+</form>
+
+<script src="scripts/validaciones.js"></script>
